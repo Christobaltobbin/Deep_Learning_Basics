@@ -160,4 +160,8 @@ train_fit <- fit(
     callback_early_stopping(monitor = "val_accuracy", patience = 5)
   )
 )
-#
+
+#save the files
+save_model_hdf5(model, "C:/Users/Chris/Desktop/Lectures/Semester_2/Advanced_programming/airfield_train/model_R.h5", overwrite = TRUE)
+load_model_hdf5("C:/Users/Chris/Desktop/Lectures/Semester_2/Advanced_programming/airfield_train/model_R.h5")
+load_model_hdf5("C:/Users/Chris/Desktop/Lectures/Semester_2/Advanced_programming/airfield_train/this_model.h5")
